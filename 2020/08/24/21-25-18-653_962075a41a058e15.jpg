@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FB9D48">
+    <meta name="msapplication-TileColor" content="#FB9D48">
+    <meta name="theme-color" content="#FB9D48">
+
+    
+    
+    <title>
+Ayende @ Rahien
+    </title>
+
+    
+
+
+    <meta name="og:site_name" content="Ayende @ Rahien">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Ayende @ Rahien">
+    <meta name="og:description" content="OREN EINI aka Ayende Rahien CEO of HIBERNATING RHINOS LTD, which develops RAVENDB, a NoSQL Open Source Document Database.">
+    <meta name="og:url" content="https://ayende.com/blog/">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@ayende">
+    <meta name="twitter:site" content="@ayende">
+    <meta name="twitter:title" content="Ayende @ Rahien">
+    <meta name="twitter:description" content="OREN EINI aka Ayende Rahien CEO of HIBERNATING RHINOS LTD, which develops RAVENDB, a NoSQL Open Source Document Database.">
+    <meta name="twitter:url" content="https://ayende.com/blog/">
+
+    <link href="/blog/Content/css/styles?v=timzUTD0szTEpIhr6-qBFOoX4Gs83QNQFX8CdNd97yo1" rel="stylesheet"/>
+
+    <link href="/blog/Content/css/custom/ayende?v=_qyeyVz6e74WbNh9KHAhsWyWNaZJ1_cSlUqdM0qyA9M1" rel="stylesheet"/>
+
+    
+</head>
+<body class="show-grid">
+
+    <div class="body-container">
+            <div class="leftSide">
+                <header>
+                    <a href="/blog/" class="logo">
+                        <h1>Ayende @ Rahien</h1>
+                    </a>
+                    <button class="menu-button" id="open-button"><i class="icomoon-position icon-arrow-down hide-sm" aria-hidden="true"></i></button>
+                </header>
+                <!--<a href="/blog/" style="display: block;"><img src="~/Content/css/img/rihno.svg" class="rihno" /></a>-->
+
+                <a href="/blog/" class="logo-vertical">
+                    <h1>Ayende @ Rahien</h1>
+                </a>
+                
+                <button class="menu-enlarge" id="enlarge-button"><i class="icomoon-position icon-circle-arrow-left hide-sm" aria-hidden="true"></i></button>
+                <div class="collapseMobile flex-grow flex-vertical">
+                    <div class="about flex-grow home">
+                        
+
+<div class="flex-grow"></div>
+<img src="/blog/Content/images/oren.jpg" class="oren-photo img-center" />
+<div class="flex-grow"></div>
+<div class="margin-top">
+    <span>Oren Eini</span> <span>aka Ayende Rahien</span>
+    <span>
+        CEO of <a href="http://www.hibernatingrhinos.com/" class="about-link" target="_blank"><strong> Hibernating Rhinos LTD</strong></a>,
+        which develops <a href="http://ravendb.net/" class="about-link" target="_blank"><strong>RavenDB</strong></a>,
+        a NoSQL Open Source Document Database.
+    </span>
+    <div class="rewards margin-top">
+        <a class="mvp-profile-horizontal" href="https://mvp.microsoft.com/en-us/PublicProfile/4012807" target="_blank"></a>
+    </div>
+</div>
+<div class="about-info margin-top">
+    <p>You can reach me by:</p>
+    <p class="mail"><a href="mailto:oren@ravendb.net">oren@ravendb.net</a></p>
+    <p class="phone">+972 52-548-6969</p>
+    <div class="flex-grow"></div>
+</div>
+                    </div>
+                    <div class="flex-grow"></div>
+                    <div class="rewards margin-top">
+                        <a class="mvp-profile-vertical" href="https://mvp.microsoft.com/en-us/PublicProfile/4012807" target="_blank"></a>
+                    </div>
+                    <div class="pull-down">
+                        <p class="icomoon">
+                                <a href="http://feeds.feedburner.com/AyendeRahien" class="icon-rss">&#x20;</a>
+                                                            <a href="mailto:ayende@ayende.com" class="icon-mail"></a>
+                                                            <a href="https://github.com/ayende" class="icon-github"></a>
+                                                            <a href="https://twitter.com/ayende" class="icon-twitter"></a>
+                                                            <a href="https://www.facebook.com/pages/RavenDB/265907650186374" class="icon-facebook"></a>
+                                                            <a href="https://www.linkedin.com/in/ravendb" class="icon-linkedin"></a>
+                        </p>
+                        
+<p class="stats"><span>Posts: <strong>7,052</strong></span> | <span>Comments: <strong>49,771</strong></span></p>
+                        <p class="copyright">Copyright (C) Ayende Rahien  2004 - 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="centerCol flex-grow">
+                <header class="body-header">
+                    <div class="search">
+<form action="/blog/search" method="get">                            <input name="q" type="search" placeholder="search" class="form-control" />
+                            <input type="submit" />
+</form>                    </div>
+                    <div style="display:inline-block">
+                            <a href="#" id="tags-button">
+                                <span class="icomoon-position icon-tags" aria-hidden="true"></span> filter by tags
+                            </a>
+                                                    <a href="#" id="archive-button">
+                                <span class="icomoon-position icon-archive" aria-hidden="true"></span> archive
+                            </a>
+                    </div>
+                    <nav class="pull-right views ">
+                        <a href="#" class="stackView" id="stackView">stack view</a>
+                        <a href="#" class="gridView active" id="gridView">grid view</a>
+                    </nav>
+
+                    <div class="clearfix"></div>
+                    
+<nav id="tags">
+	<ul>
+				<li>
+					<a href="/blog/tags/architecture">architecture</a>&nbsp;<span>(426)</span>&nbsp;<a href="/blog/rss/architecture" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/bugs">bugs</a>&nbsp;<span>(394)</span>&nbsp;<a href="/blog/rss/bugs" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/challanges">challanges</a>&nbsp;<span>(91)</span>&nbsp;<a href="/blog/rss/challanges" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/community">community</a>&nbsp;<span>(281)</span>&nbsp;<a href="/blog/rss/community" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/databases">databases</a>&nbsp;<span>(341)</span>&nbsp;<a href="/blog/rss/databases" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/design">design</a>&nbsp;<span>(734)</span>&nbsp;<a href="/blog/rss/design" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/development">development</a>&nbsp;<span>(472)</span>&nbsp;<a href="/blog/rss/development" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/hibernating-practices">hibernating-practices</a>&nbsp;<span>(39)</span>&nbsp;<a href="/blog/rss/hibernating-practices" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/humor">humor</a>&nbsp;<span>(170)</span>&nbsp;<a href="/blog/rss/humor" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/miscellaneous">miscellaneous</a>&nbsp;<span>(586)</span>&nbsp;<a href="/blog/rss/miscellaneous" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/performance">performance</a>&nbsp;<span>(315)</span>&nbsp;<a href="/blog/rss/performance" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/programming">programming</a>&nbsp;<span>(936)</span>&nbsp;<a href="/blog/rss/programming" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/raven">raven</a>&nbsp;<span>(1163)</span>&nbsp;<a href="/blog/rss/raven" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/ravendb-net">ravendb.net</a>&nbsp;<span>(137)</span>&nbsp;<a href="/blog/rss/ravendb-net" class="rss">rss</a>
+				</li>
+				<li>
+					<a href="/blog/tags/reviews">reviews</a>&nbsp;<span>(180)</span>&nbsp;<a href="/blog/rss/reviews" class="rss">rss</a>
+				</li>
+
+	</ul>
+</nav>
+
+                    
+<nav id="archive">
+	<ul>
+				<li>
+					<a href="#">2020</a>
+					<ul>
+							<li><a href="/blog/archive/2020/8"> August </a> (8)</li>
+							<li><a href="/blog/archive/2020/7"> July </a> (9)</li>
+							<li><a href="/blog/archive/2020/6"> June </a> (17)</li>
+							<li><a href="/blog/archive/2020/5"> May </a> (15)</li>
+							<li><a href="/blog/archive/2020/4"> April </a> (14)</li>
+							<li><a href="/blog/archive/2020/3"> March </a> (21)</li>
+							<li><a href="/blog/archive/2020/2"> February </a> (16)</li>
+							<li><a href="/blog/archive/2020/1"> January </a> (13)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2019</a>
+					<ul>
+							<li><a href="/blog/archive/2019/12"> December </a> (17)</li>
+							<li><a href="/blog/archive/2019/11"> November </a> (14)</li>
+							<li><a href="/blog/archive/2019/10"> October </a> (16)</li>
+							<li><a href="/blog/archive/2019/9"> September </a> (10)</li>
+							<li><a href="/blog/archive/2019/8"> August </a> (8)</li>
+							<li><a href="/blog/archive/2019/7"> July </a> (16)</li>
+							<li><a href="/blog/archive/2019/6"> June </a> (11)</li>
+							<li><a href="/blog/archive/2019/5"> May </a> (13)</li>
+							<li><a href="/blog/archive/2019/4"> April </a> (18)</li>
+							<li><a href="/blog/archive/2019/3"> March </a> (12)</li>
+							<li><a href="/blog/archive/2019/2"> February </a> (19)</li>
+							<li><a href="/blog/archive/2019/1"> January </a> (23)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2018</a>
+					<ul>
+							<li><a href="/blog/archive/2018/12"> December </a> (15)</li>
+							<li><a href="/blog/archive/2018/11"> November </a> (14)</li>
+							<li><a href="/blog/archive/2018/10"> October </a> (19)</li>
+							<li><a href="/blog/archive/2018/9"> September </a> (18)</li>
+							<li><a href="/blog/archive/2018/8"> August </a> (23)</li>
+							<li><a href="/blog/archive/2018/7"> July </a> (20)</li>
+							<li><a href="/blog/archive/2018/6"> June </a> (20)</li>
+							<li><a href="/blog/archive/2018/5"> May </a> (23)</li>
+							<li><a href="/blog/archive/2018/4"> April </a> (15)</li>
+							<li><a href="/blog/archive/2018/3"> March </a> (23)</li>
+							<li><a href="/blog/archive/2018/2"> February </a> (19)</li>
+							<li><a href="/blog/archive/2018/1"> January </a> (23)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2017</a>
+					<ul>
+							<li><a href="/blog/archive/2017/12"> December </a> (21)</li>
+							<li><a href="/blog/archive/2017/11"> November </a> (24)</li>
+							<li><a href="/blog/archive/2017/10"> October </a> (22)</li>
+							<li><a href="/blog/archive/2017/9"> September </a> (21)</li>
+							<li><a href="/blog/archive/2017/8"> August </a> (23)</li>
+							<li><a href="/blog/archive/2017/7"> July </a> (21)</li>
+							<li><a href="/blog/archive/2017/6"> June </a> (24)</li>
+							<li><a href="/blog/archive/2017/5"> May </a> (21)</li>
+							<li><a href="/blog/archive/2017/4"> April </a> (21)</li>
+							<li><a href="/blog/archive/2017/3"> March </a> (23)</li>
+							<li><a href="/blog/archive/2017/2"> February </a> (20)</li>
+							<li><a href="/blog/archive/2017/1"> January </a> (23)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2016</a>
+					<ul>
+							<li><a href="/blog/archive/2016/12"> December </a> (17)</li>
+							<li><a href="/blog/archive/2016/11"> November </a> (18)</li>
+							<li><a href="/blog/archive/2016/10"> October </a> (22)</li>
+							<li><a href="/blog/archive/2016/9"> September </a> (18)</li>
+							<li><a href="/blog/archive/2016/8"> August </a> (23)</li>
+							<li><a href="/blog/archive/2016/7"> July </a> (22)</li>
+							<li><a href="/blog/archive/2016/6"> June </a> (17)</li>
+							<li><a href="/blog/archive/2016/5"> May </a> (24)</li>
+							<li><a href="/blog/archive/2016/4"> April </a> (16)</li>
+							<li><a href="/blog/archive/2016/3"> March </a> (16)</li>
+							<li><a href="/blog/archive/2016/2"> February </a> (21)</li>
+							<li><a href="/blog/archive/2016/1"> January </a> (21)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2015</a>
+					<ul>
+							<li><a href="/blog/archive/2015/12"> December </a> (5)</li>
+							<li><a href="/blog/archive/2015/11"> November </a> (10)</li>
+							<li><a href="/blog/archive/2015/10"> October </a> (9)</li>
+							<li><a href="/blog/archive/2015/9"> September </a> (17)</li>
+							<li><a href="/blog/archive/2015/8"> August </a> (20)</li>
+							<li><a href="/blog/archive/2015/7"> July </a> (17)</li>
+							<li><a href="/blog/archive/2015/6"> June </a> (4)</li>
+							<li><a href="/blog/archive/2015/5"> May </a> (12)</li>
+							<li><a href="/blog/archive/2015/4"> April </a> (9)</li>
+							<li><a href="/blog/archive/2015/3"> March </a> (8)</li>
+							<li><a href="/blog/archive/2015/2"> February </a> (25)</li>
+							<li><a href="/blog/archive/2015/1"> January </a> (17)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2014</a>
+					<ul>
+							<li><a href="/blog/archive/2014/12"> December </a> (22)</li>
+							<li><a href="/blog/archive/2014/11"> November </a> (19)</li>
+							<li><a href="/blog/archive/2014/10"> October </a> (21)</li>
+							<li><a href="/blog/archive/2014/9"> September </a> (37)</li>
+							<li><a href="/blog/archive/2014/8"> August </a> (24)</li>
+							<li><a href="/blog/archive/2014/7"> July </a> (23)</li>
+							<li><a href="/blog/archive/2014/6"> June </a> (13)</li>
+							<li><a href="/blog/archive/2014/5"> May </a> (19)</li>
+							<li><a href="/blog/archive/2014/4"> April </a> (24)</li>
+							<li><a href="/blog/archive/2014/3"> March </a> (23)</li>
+							<li><a href="/blog/archive/2014/2"> February </a> (21)</li>
+							<li><a href="/blog/archive/2014/1"> January </a> (24)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2013</a>
+					<ul>
+							<li><a href="/blog/archive/2013/12"> December </a> (23)</li>
+							<li><a href="/blog/archive/2013/11"> November </a> (29)</li>
+							<li><a href="/blog/archive/2013/10"> October </a> (27)</li>
+							<li><a href="/blog/archive/2013/9"> September </a> (26)</li>
+							<li><a href="/blog/archive/2013/8"> August </a> (24)</li>
+							<li><a href="/blog/archive/2013/7"> July </a> (24)</li>
+							<li><a href="/blog/archive/2013/6"> June </a> (23)</li>
+							<li><a href="/blog/archive/2013/5"> May </a> (25)</li>
+							<li><a href="/blog/archive/2013/4"> April </a> (26)</li>
+							<li><a href="/blog/archive/2013/3"> March </a> (24)</li>
+							<li><a href="/blog/archive/2013/2"> February </a> (24)</li>
+							<li><a href="/blog/archive/2013/1"> January </a> (21)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2012</a>
+					<ul>
+							<li><a href="/blog/archive/2012/12"> December </a> (19)</li>
+							<li><a href="/blog/archive/2012/11"> November </a> (22)</li>
+							<li><a href="/blog/archive/2012/10"> October </a> (27)</li>
+							<li><a href="/blog/archive/2012/9"> September </a> (24)</li>
+							<li><a href="/blog/archive/2012/8"> August </a> (30)</li>
+							<li><a href="/blog/archive/2012/7"> July </a> (23)</li>
+							<li><a href="/blog/archive/2012/6"> June </a> (25)</li>
+							<li><a href="/blog/archive/2012/5"> May </a> (23)</li>
+							<li><a href="/blog/archive/2012/4"> April </a> (25)</li>
+							<li><a href="/blog/archive/2012/3"> March </a> (25)</li>
+							<li><a href="/blog/archive/2012/2"> February </a> (28)</li>
+							<li><a href="/blog/archive/2012/1"> January </a> (24)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2011</a>
+					<ul>
+							<li><a href="/blog/archive/2011/12"> December </a> (17)</li>
+							<li><a href="/blog/archive/2011/11"> November </a> (14)</li>
+							<li><a href="/blog/archive/2011/10"> October </a> (24)</li>
+							<li><a href="/blog/archive/2011/9"> September </a> (28)</li>
+							<li><a href="/blog/archive/2011/8"> August </a> (27)</li>
+							<li><a href="/blog/archive/2011/7"> July </a> (30)</li>
+							<li><a href="/blog/archive/2011/6"> June </a> (19)</li>
+							<li><a href="/blog/archive/2011/5"> May </a> (16)</li>
+							<li><a href="/blog/archive/2011/4"> April </a> (30)</li>
+							<li><a href="/blog/archive/2011/3"> March </a> (23)</li>
+							<li><a href="/blog/archive/2011/2"> February </a> (11)</li>
+							<li><a href="/blog/archive/2011/1"> January </a> (26)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2010</a>
+					<ul>
+							<li><a href="/blog/archive/2010/12"> December </a> (29)</li>
+							<li><a href="/blog/archive/2010/11"> November </a> (28)</li>
+							<li><a href="/blog/archive/2010/10"> October </a> (35)</li>
+							<li><a href="/blog/archive/2010/9"> September </a> (33)</li>
+							<li><a href="/blog/archive/2010/8"> August </a> (44)</li>
+							<li><a href="/blog/archive/2010/7"> July </a> (17)</li>
+							<li><a href="/blog/archive/2010/6"> June </a> (20)</li>
+							<li><a href="/blog/archive/2010/5"> May </a> (53)</li>
+							<li><a href="/blog/archive/2010/4"> April </a> (29)</li>
+							<li><a href="/blog/archive/2010/3"> March </a> (35)</li>
+							<li><a href="/blog/archive/2010/2"> February </a> (33)</li>
+							<li><a href="/blog/archive/2010/1"> January </a> (36)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2009</a>
+					<ul>
+							<li><a href="/blog/archive/2009/12"> December </a> (37)</li>
+							<li><a href="/blog/archive/2009/11"> November </a> (35)</li>
+							<li><a href="/blog/archive/2009/10"> October </a> (53)</li>
+							<li><a href="/blog/archive/2009/9"> September </a> (60)</li>
+							<li><a href="/blog/archive/2009/8"> August </a> (66)</li>
+							<li><a href="/blog/archive/2009/7"> July </a> (29)</li>
+							<li><a href="/blog/archive/2009/6"> June </a> (24)</li>
+							<li><a href="/blog/archive/2009/5"> May </a> (52)</li>
+							<li><a href="/blog/archive/2009/4"> April </a> (63)</li>
+							<li><a href="/blog/archive/2009/3"> March </a> (35)</li>
+							<li><a href="/blog/archive/2009/2"> February </a> (53)</li>
+							<li><a href="/blog/archive/2009/1"> January </a> (50)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2008</a>
+					<ul>
+							<li><a href="/blog/archive/2008/12"> December </a> (58)</li>
+							<li><a href="/blog/archive/2008/11"> November </a> (65)</li>
+							<li><a href="/blog/archive/2008/10"> October </a> (46)</li>
+							<li><a href="/blog/archive/2008/9"> September </a> (48)</li>
+							<li><a href="/blog/archive/2008/8"> August </a> (96)</li>
+							<li><a href="/blog/archive/2008/7"> July </a> (87)</li>
+							<li><a href="/blog/archive/2008/6"> June </a> (45)</li>
+							<li><a href="/blog/archive/2008/5"> May </a> (51)</li>
+							<li><a href="/blog/archive/2008/4"> April </a> (52)</li>
+							<li><a href="/blog/archive/2008/3"> March </a> (70)</li>
+							<li><a href="/blog/archive/2008/2"> February </a> (43)</li>
+							<li><a href="/blog/archive/2008/1"> January </a> (49)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2007</a>
+					<ul>
+							<li><a href="/blog/archive/2007/12"> December </a> (100)</li>
+							<li><a href="/blog/archive/2007/11"> November </a> (52)</li>
+							<li><a href="/blog/archive/2007/10"> October </a> (109)</li>
+							<li><a href="/blog/archive/2007/9"> September </a> (68)</li>
+							<li><a href="/blog/archive/2007/8"> August </a> (80)</li>
+							<li><a href="/blog/archive/2007/7"> July </a> (56)</li>
+							<li><a href="/blog/archive/2007/6"> June </a> (150)</li>
+							<li><a href="/blog/archive/2007/5"> May </a> (115)</li>
+							<li><a href="/blog/archive/2007/4"> April </a> (73)</li>
+							<li><a href="/blog/archive/2007/3"> March </a> (124)</li>
+							<li><a href="/blog/archive/2007/2"> February </a> (102)</li>
+							<li><a href="/blog/archive/2007/1"> January </a> (68)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2006</a>
+					<ul>
+							<li><a href="/blog/archive/2006/12"> December </a> (95)</li>
+							<li><a href="/blog/archive/2006/11"> November </a> (53)</li>
+							<li><a href="/blog/archive/2006/10"> October </a> (120)</li>
+							<li><a href="/blog/archive/2006/9"> September </a> (57)</li>
+							<li><a href="/blog/archive/2006/8"> August </a> (88)</li>
+							<li><a href="/blog/archive/2006/7"> July </a> (54)</li>
+							<li><a href="/blog/archive/2006/6"> June </a> (103)</li>
+							<li><a href="/blog/archive/2006/5"> May </a> (89)</li>
+							<li><a href="/blog/archive/2006/4"> April </a> (84)</li>
+							<li><a href="/blog/archive/2006/3"> March </a> (143)</li>
+							<li><a href="/blog/archive/2006/2"> February </a> (78)</li>
+							<li><a href="/blog/archive/2006/1"> January </a> (64)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2005</a>
+					<ul>
+							<li><a href="/blog/archive/2005/12"> December </a> (70)</li>
+							<li><a href="/blog/archive/2005/11"> November </a> (97)</li>
+							<li><a href="/blog/archive/2005/10"> October </a> (91)</li>
+							<li><a href="/blog/archive/2005/9"> September </a> (61)</li>
+							<li><a href="/blog/archive/2005/8"> August </a> (74)</li>
+							<li><a href="/blog/archive/2005/7"> July </a> (92)</li>
+							<li><a href="/blog/archive/2005/6"> June </a> (100)</li>
+							<li><a href="/blog/archive/2005/5"> May </a> (53)</li>
+							<li><a href="/blog/archive/2005/4"> April </a> (42)</li>
+							<li><a href="/blog/archive/2005/3"> March </a> (41)</li>
+							<li><a href="/blog/archive/2005/2"> February </a> (84)</li>
+							<li><a href="/blog/archive/2005/1"> January </a> (31)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">2004</a>
+					<ul>
+							<li><a href="/blog/archive/2004/12"> December </a> (49)</li>
+							<li><a href="/blog/archive/2004/11"> November </a> (26)</li>
+							<li><a href="/blog/archive/2004/10"> October </a> (26)</li>
+							<li><a href="/blog/archive/2004/9"> September </a> (6)</li>
+							<li><a href="/blog/archive/2004/4"> April </a> (10)</li>
+					</ul>
+				</li>
+
+	</ul>
+</nav>
+
+                </header>
+                <div class="banner">
+                    <a href="https://ravendb.net" target="_blank">
+                        <img src="/blog/Content/css/img/banners/ravendb-50.png" 
+                            class="img-responsive img-center"
+                            alt="RavenDB 5.0 Available Now" />
+                    </a>
+                </div>
+                
+
+
+<div class="postsList">
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 24</span>
+                    2020
+                </time>
+                <a href="/blog/191745-B/creating-a-leader-board-with-ravendb">
+                        <h2>Creating a leader board with RavenDB</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>4 min</strong> <span class="collapse">| <strong>771 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Creating a leader board with RavenDB+https://ayende.com:443/blog/191745-B/creating-a-leader-board-with-ravendb via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191745-B/creating-a-leader-board-with-ravendb&amp;title=Creating a leader board with RavenDB','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191745-B/creating-a-leader-board-with-ravendb', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191745-B/creating-a-leader-board-with-ravendb#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+								<li><a href="/blog/tags/development">development</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p><a href="https://twitter.com/casperOne/status/1297524780611047427">This question was raised in Twitter</a>, and I thought it was quite interesting. In SQL, you can use the <em>rank()</em> function to generate this value, but if you are working on a large data set and especially if you are sorting, you will probably want to avoid this.</p><p>Microsoft has <a href="https://docs.microsoft.com/en-us/gaming/azure/reference-architectures/leaderboard-relational">a reference architecture for the leader board problem</a> where they recommend running a separate process to recompute the ranking every few minutes and cite about 20 seconds to run the query on a highly optimized scenario (with 1.6 billion entries in a column store).</p><p>RavenDB doesn’t have a <em>rank()</em> function, but that you cannot implement a leader board. Let’s see how we can build one, shall we? We’ll start with looking at the document representing a single game:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_2.png"><img width="430" height="280" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb.png" border="0"></a></p></blockquote><p>You’ll probably have a lot more data in your use case, but that should be sufficient to create the leader board. The first step we need to do is to create an index to aggregate those values into total score for the gamers. Here is what the index looks like:</p><blockquote><script src="https://gist.github.com/ayende/35fa35e2ee41676f53e219a18dddde87.js"></script></blockquote><p>This is a fairly trivial index, which will allow us to compute the total score of a gamer across all games. You might want to also add score per year / month / week / day, etc. I’m not going to touch that since this is basically the same thing.</p><p>RavenDB’s map/reduce indexes will process the data and aggregate it across all games. A new game coming in will not require us to recompute the whole dataset, only the gamer that was changed will be updated, and even so, RavenDB can optimize it even further in many cases and touch only <em>some</em> of the data for that gamer to compute the new total.</p><p>However, there is a problem here. How do we generate a leader board here? To find the top 20 gamers is easy:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_4.png"><img width="313" height="74" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_1.png" border="0"></a></p></blockquote><p>That is easy enough, for sure. But a leader board has more features that we want to have. For example, if I’m not in the top 20, I might want to see other gamers around my level. How can we do that?</p><p>We’ll need to issue a few queries for that. First, we want to find what the gamer actual score is:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_6.png"><img width="326" height="70" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_2.png" border="0"></a></p></blockquote><p>And then we will need to get the gamers that are a bit better from the current gamer:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_8.png"><img width="323" height="91" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_3.png" border="0"></a></p></blockquote><p>What this does is to ask to get the 4 players that are better than the current gamer. And we can do the same for those that are a bit worse:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_10.png"><img width="320" height="89" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_4.png" border="0"></a></p></blockquote><p>Note that we are switching the direction of the filter <em>and</em> the order by direction in both queries. That way, we’ll have a list of ten players that are ranked higher or lower than the current gamer, with the current one strictly in the middle.</p><p>I’m ignoring the possibility of multiple gamers with the same score, but you can change the &gt; to &gt;= to take them into account. Whatever this is important or not depends on how you want to structure your leader board.</p><p>The final, and most complex, part of the leader board is finding the actual rank of any arbitrary gamer. How can we do that? We don’t want to go through the entire result set to get it. The answer to this question is to use facets, like so:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_12.png"><img width="460" height="57" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_5.png" border="0"></a></p></blockquote><p>What this will do is ask RavenDB to provide a count of all the gamers whose score are higher or lower than the current gamer. The output looks like this:</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_14.png"><img width="346" height="212" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Ranking_12C8B/image_thumb_6.png" border="0"></a></p></blockquote><p>And you can now compute the score of the gamer. </p><p>Facets are optimized for these kind of queries and are going to operate over the results of the <em>index</em>, so they are already going to operate over aggregated data. Internally, the data is actually stored in a columnar format, so you can expect very quick replies.</p><p>There you have it, all the components required to create a leader board in RavenDB.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191745-B/creating-a-leader-board-with-ravendb">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 21</span>
+                    2020
+                </time>
+                <a href="/blog/191651-B/the-inconsistent-index-results">
+                        <h2>The inconsistent index results</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>2 min</strong> <span class="collapse">| <strong>235 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=The inconsistent index results+https://ayende.com:443/blog/191651-B/the-inconsistent-index-results via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191651-B/the-inconsistent-index-results&amp;title=The inconsistent index results','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191651-B/the-inconsistent-index-results', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191651-B/the-inconsistent-index-results#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/bugs">bugs</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/programming">programming</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>A user reported an issue with RavenDB. They got unexpected results in their production database, but when they imported the data locally and tested things, everything worked. </p><p>Here is the simplified version of their index:</p><blockquote><script src="https://gist.github.com/ayende/94f677b850f97deb021540f358142a22.js"></script></blockquote><p>This is a multi map index that covers multiple collections and aggregate data across them. In this case, the issue was that in production, for <em>some</em> of the results, the <em>CompanyName</em> field was null.</p><p>The actual index was more complex, but once we trimmed it down in size to something more manageable, it became obvious what the problem is. Let’s look at the problematic line:</p><blockquote><p>CompanyName = g.First().CompanyName,</p></blockquote><p>The problem is with the First() call. There is <em>no promise</em> of ordering in the grouping results, and you are getting the first item there. If the item happened to be the one from the Company map, the index will appear to work and you’ll get the right company name. However, if the result from the User map will show up first, we’ll have null in the CompanyName. </p><p>We don’t make any guarantees about the order of elements in the grouping, but in practice it is often (<em>don’t</em> rely on it) depends on the order of updates in the documents. So you can update the user after the company and see the changes in the index.</p><p>The right way to index this data is to do so explicitly, like so:</p><blockquote><p>CompanyName = g.First(x =&gt; x.CompanyName != null).CompanyName,</p></blockquote>
+			</div>
+			<div class="read-more"><a href="/blog/191651-B/the-inconsistent-index-results">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 20</span>
+                    2020
+                </time>
+                <a href="/blog/191681-A/when-the-erp-has-a-9-figures-sales-order">
+                        <h2>When the ERP has a 9 figures sales order</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>2 min</strong> <span class="collapse">| <strong>233 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=When the ERP has a 9 figures sales order+https://ayende.com:443/blog/191681-A/when-the-erp-has-a-9-figures-sales-order via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191681-A/when-the-erp-has-a-9-figures-sales-order&amp;title=When the ERP has a 9 figures sales order','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191681-A/when-the-erp-has-a-9-figures-sales-order', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191681-A/when-the-erp-has-a-9-figures-sales-order#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/bugs">bugs</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>Our internal ERP system is configured to send an email when we have orders that cross a certain threshold. For obvious reasons, I like knowing when a big deal has closed. For the most part, for large orders, there is a back and forth process with the customer, so we know to expect the order. In most cases, the process involves talking to legal, purchasing agents and varying degrees of bureaucracy.</p><p>Sometimes we have a customer that come out of the blue, place a large order and never even talk to a person throughout the whole thing. I <em>love</em> those cases, as you can imagine, because it means that there was no friction anywhere that we needed to deal with. </p><p>Today, I got notified about an order with a large enough sum that I had to stop and count the number of zeroes. I was quite happy with the number, but was somewhat concerned that I would have to pay enough taxes to close down the national debt. I checked a bit further with the accounting department what was going on there. </p><p>Sadly, we won’t be able to purchase a large island from pocket change. This was a manual order and instead of putting the <em>amount</em> of the order, they put in the <em>invoice id</em>. </p><p>Cue sad trombone sound. </p><p>If you need me, I’m currently busy trying to cancel my tickets to the moon.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191681-A/when-the-erp-has-a-9-figures-sales-order">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 19</span>
+                    2020
+                </time>
+                <a href="/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb">
+                        <h2>Upcoming webinar: Getting a peaceful date night with RavenDB</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>1 min</strong> <span class="collapse">| <strong>65 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Upcoming webinar: Getting a peaceful date night with RavenDB+https://ayende.com:443/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb&amp;title=Upcoming webinar: Getting a peaceful date night with RavenDB','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/community">community</a></li>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>Next week I’m going to be talking with Ryan Rounkles about his use of RavenDB in Tended App. The Tended App is a medical services app for parents with a child that has medical needs. It can be something as simple as the sniffles or a 24-hour virus, to special needs kids which require constant attention.</p><p><a href="https://us02web.zoom.us/webinar/register/8115945736423/WN_zMMHko5cRkySUA9vgCK_wQ">Join us on Aug 25, 2020 10:30 AM EST.</a></p>
+			</div>
+			<div class="read-more"><a href="/blog/191713-A/upcoming-webinar-getting-a-peaceful-date-night-with-ravendb">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 18</span>
+                    2020
+                </time>
+                <a href="/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster">
+                        <h2>Production post-mortem: Too much RAM and the unstable cluster</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>5 min</strong> <span class="collapse">| <strong>970 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Production post-mortem: Too much RAM and the unstable cluster+https://ayende.com:443/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster&amp;title=Production post-mortem: Too much RAM and the unstable cluster','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/architecture">architecture</a></li>
+								<li><a href="/blog/tags/design">design</a></li>
+								<li><a href="/blog/tags/bugs">bugs</a></li>
+								<li><a href="/blog/tags/databases">databases</a></li>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>A customer reported that on their system, they suffered from frequent cluster elections in some cases. That is <em>usually</em> an indication that the system resources are hit in some manner. From experience, that usually means that the I/O on the machine is capped (very common in the cloud) or that there is some network issue. </p><p>The customer was able to rule these issues out. The latency to the storage was typically withing less than a millisecond and the maximum latency never exceed 5 ms. The network monitoring showed that everything was fine, as well. The CPU was hovering around the 7% CPU and there was no <em>reason</em> for the issue.</p><p>Looking at the logs, we saw <em>very</em> suspicious gaps in the servers activity, but with no good reason for them. Furthermore, the customer was able to narrow the issue down to a single scenario. Resetting the indexes would cause the cluster state to become unstable. And it did so with very high frequency. </p><p>“That is flat out impossible”, I said. And I meant it. Indexing workload is something that we have a <em>lot</em> of experience managing and in RavenDB 4.0 we have made some major changes to our indexing structure to handle this scenario. In particular, this meant that indexing:</p><ul><li>Will run in dedicated threads.</li><li>Are scoped to run <em>outside </em>certain cores, to leave the OS capacity to run other tasks.</li><li>Self monitor and know when to wind down to avoid impacting system performance.</li><li>Indexing threads are run with lower priority.</li><li>The cluster state, on the other hand, is run with <em>high</em> priority.</li></ul><p>The entire thing didn’t make sense. However… the customer did a great job in setting up an environment where they could show us: Click on the reset button, and the cluster become unstable.&nbsp; So it is impossible, but it happens.</p><p>We explored a lot of stuff around this issue. The machine is big and running multiple NUMA node, maybe it was some interaction with that? It was highly unlikely, and eventually didn’t pan out, but that is one example of the things that we tried. </p><p>We setup a similar cluster on our end and gave it 10x more load than what the customer did, on a set of machines that had a fraction of the customer’s power. The cluster and the system state remain absolutely stable. </p><p>I officially declared that we were in a state of perplexation. </p><p>When we run the customer’s <em>own scenario</em> on our system, we saw <em>something</em>, but nothing like what we saw on their end. One of the things that we usually do when we investigate resource constraint issues is to give the machines under test a <em>lot</em> less capability. Less memory and slower disks, for example, means that it is much easier to surface many problems. But the worse we made the situation for the test cluster, the better the results became. </p><p>We changed things up. We gave the cluster machines with 128 GB of RAM and fast disks and tried it again. The situation immediately reproduced. </p><p>Cue facepalm sound here. </p><p><em>Why</em> would giving <em>more </em>resources to the system cause instability in the cluster? Note that the other metrics also suffered, which made absolutely no sense. </p><p>We started digging deeper and we found the following index:</p><blockquote><script src="https://gist.github.com/ayende/bb573ee58e950e4225693bc984ae2f0d.js"></script></blockquote><p>It is about as simple an index as you can imagine it would be and should cause absolutely no issue for RavenDB. So what was going on? We then looked at the documents…</p><blockquote><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/Production-post-mortem-The-system_93A2/image_2.png"><img width="446" height="291" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/Production-post-mortem-The-system_93A2/image_thumb.png" border="0"></a></p></blockquote><p>I would expect the <em>State</em> field to be a simple enum property. But it is an array that describe the state changes in the system. This array also holds complex objects. The size of the array is on average about 450 items and I saw it hit a max of 13,000 items.</p><p>That help clarify things. During index, we have to process the <em>State</em> property, and because it is an array, we index each of the <em>elements</em> inside it. That means that for each document, we’ll index between 400 – 13,000 items for the <em>State</em> field. What is more, we have a complex object to index. RavenDB will index that as a JSON string, so effectively the indexing would generate a <strong>lot</strong> of strings. These strings are going to be held in memory until the end of the indexing batch. So far, so good, but the problem in this case was that there were enough resources to have a <em>big</em> batch of documents. </p><p>That means that we would generate over 64 <em>million</em> string objects in one of those batches. </p><p>Enter GC, stage left.</p><p>The GC will be invoked based on how many allocations you have (in this case, a <em>lot</em>) and how many <em>live </em>objects you have. In this case, also a lot, until the index batch is completed. However, because we run GC multiple times during the indexing batch, we had promoted significant numbers of objects to the next generation, and Gen1 or Gen2 collections are far more expensive. </p><p>Once we knew what the problem was, it was easy to find a fix. Don’t index the <em>State</em> field. Given that the values that were indexed were JSON strings, it is unlikely that the customer actually queried on them (later confirmed by talking to the customer).</p><p>On the RavenDB side, we added monitoring for the allocation frequency and will close the indexing batch early to prevent handing the GC too much work all at once.</p><p>The reason we failed to reproduce that on lower end machine was simple, RavenDB already used enough memory so we closed the batch early, before we could gather enough objects to cause the GC to really work hard. When running on a big machine, it had time to get the ball rolling and hand the whole big mess to the GC for cleanup.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191650-B/production-post-mortem-too-much-ram-and-the-unstable-cluster">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 17</span>
+                    2020
+                </time>
+                <a href="/blog/191649-B/podcast-soleadsaturday-with-oren-eini">
+                        <h2><span class="seriesTitle">Podcast</span>#SoLeadSaturday with Oren Eini</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>1 min</strong> <span class="collapse">| <strong>65 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Podcast: #SoLeadSaturday with Oren Eini+https://ayende.com:443/blog/191649-B/podcast-soleadsaturday-with-oren-eini via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191649-B/podcast-soleadsaturday-with-oren-eini&amp;title=Podcast: #SoLeadSaturday with Oren Eini','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191649-B/podcast-soleadsaturday-with-oren-eini', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191649-B/podcast-soleadsaturday-with-oren-eini#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/community">community</a></li>
+								<li><a href="/blog/tags/architecture">architecture</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>I had the pleasure of talking with Vaishali Lambe in <a href="https://www.linkedin.com/posts/vaishali-lambe_ayende-rahien-activity-6700367129453096960-OGbw">SoLeadSaturday this week</a>.</p><p>We talked about various aspects of being in - Building a business around open source software, Working in a distributed teams, Growing a company from 1 employee to 30+, Non technical details that are important to understand to run a company. Also, discussed an importance of blogging.</p><p>You can <a href="https://www.linkedin.com/posts/vaishali-lambe_ayende-rahien-activity-6700367129453096960-OGbw">check it here</a>.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191649-B/podcast-soleadsaturday-with-oren-eini">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 14</span>
+                    2020
+                </time>
+                <a href="/blog/191617-C/difference-between-knowing-python-and-knowing-python">
+                        <h2>Difference between knowing Python and *knowing* Python</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>3 min</strong> <span class="collapse">| <strong>475 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Difference between knowing Python and *knowing* Python+https://ayende.com:443/blog/191617-C/difference-between-knowing-python-and-knowing-python via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191617-C/difference-between-knowing-python-and-knowing-python&amp;title=Difference between knowing Python and *knowing* Python','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191617-C/difference-between-knowing-python-and-knowing-python', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191617-C/difference-between-knowing-python-and-knowing-python#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>2 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/development">development</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>This post talks about Python, but it generalize well to other programming languages and environments. I’m using Python and my own experience here to make a <em>point</em>, this isn’t really a post about Python itself.</p><p>I know how to read and write code in Python. By that I mean that I understand the syntax and how to do things in Python. I wouldn’t say that I’m an expert in all the myriad of ways that you can make Python jump on command, but I’m comfortable reading non trivial code bases and I like to use Python for small scripting jobs. I’m also maintaining (personally) the <a href="https://github.com/ravendb/ravendb-python-client">RavenDB Python Client</a> which is just over 11K lines of code and decidedly non trivial.</p><p>But I don’t <em>know</em> Python. </p><p>Those two statements may seem to contradict one another, but I don’t really think so.</p><p>To this day, I find that packaging code in Python to be an unfamiliar territory. I don’t have a good feel for that and even when I follow the guides exactly, <em>something</em> doesn’t work properly more often than not. I also have only the vaguest idea about the Python virtual machine and the internals of the GC. </p><p>My few attempts to build Python interfaces on top of ctypes has been… painful. And a task such as creating an application or a package that would embed a native component in Python is likely beyond me without investing a significant amount of time and effort.</p><p>This is interesting, because my threshold for understand a language or a platform means that I should have the ability to do non trivial things with the <em>environment</em>, not just with the code. </p><p>Packaging is an obvious problem, once you go beyond the simplest of scripts. But the detailed knowledge on debugging, troubleshooting and analysis of the system is also what I would expect to have before I could claim that I’m familiar with a particular environment. </p><p>There is often a lot of derision for job requirements such as “Minimum 5 years experience with Xyz”. Leaving aside Xyz being younger than five years.&nbsp; In many cases this is a requirement that came from the HR department and not the technical team. </p><p>But when I read a requirement like that, I translate that to the difference between knowing how the code work, and <em>grokking</em> how the whole environment operates.</p><p>Note that there is nothing really insurmountable with Python, per se. If I would dedicate enough time (probably in the order of weeks, not months) to study it properly, I would have most of the knowledge that I need. But whenever I run into a stumbling block when using Python, it is always easier to simply forgo using Python and go use something that I am more familiar with. Hence, there has never been enough of a reason to make the jump to really understand the platform. </p>
+			</div>
+			<div class="read-more"><a href="/blog/191617-C/difference-between-knowing-python-and-knowing-python">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Aug 05</span>
+                    2020
+                </time>
+                <a href="/blog/191585-B/what-is-default-object-used-for">
+                        <h2>What is default(object) used for?</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>2 min</strong> <span class="collapse">| <strong>213 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=What is default(object) used for?+https://ayende.com:443/blog/191585-B/what-is-default-object-used-for via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191585-B/what-is-default-object-used-for&amp;title=What is default(object) used for?','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191585-B/what-is-default-object-used-for', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191585-B/what-is-default-object-used-for#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>3 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/design">design</a></li>
+								<li><a href="/blog/tags/development">development</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>I was asked what the meaning of <em>default(object)</em> is in the following piece of code:</p><blockquote><script src="https://gist.github.com/ayende/5b87f3b84a7c899893462cb39659ef73.js"></script></blockquote><p>The code is something that you’ll see a lot in RavenDB indexes, but I understand why it is a strange construct. The <em>default(object)</em> is a way to <em>null</em>. This is asking the C# compiler to add the default value of the <em>object</em> type, which is null.</p><p>So why not simply say <em>null </em>there? </p><p>Look at the code, we aren’t setting a field here, we are creating an <em>anonymous</em> object. When we set a field to <em>null</em>, the compiler can tell what the type of the field is from the class definition and check that the value is appropriate. You can’t set a null to a Boolean properly, for example.</p><p>With anonymous objects, the compiler need to know what the type of the field is, and <em>null</em> doesn’t provide this information. You <em>can</em> use the <em>(object)null</em> construct, which has the same meaning as <em>default(object)</em>, but I find the later to be syntactically more pleasant to read. </p><p>It may make more sense if you’ll look at the following code snippet:</p><blockquote><script src="https://gist.github.com/ayende/67649ce68ad38478ea46d9ffb8e9fec6.js"></script></blockquote><p>This technique is probably only useful if you deal with anonymous objects a <em>lot</em>. That is something that you do frequently with RavenDB indexes, which is how I run into this syntax.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191585-B/what-is-default-object-used-for">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Jul 27</span>
+                    2020
+                </time>
+                <a href="/blog/191521-A/processing-large-aggregations-in-ravendb">
+                        <h2>Processing large aggregations in RavenDB</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>3 min</strong> <span class="collapse">| <strong>541 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=Processing large aggregations in RavenDB+https://ayende.com:443/blog/191521-A/processing-large-aggregations-in-ravendb via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191521-A/processing-large-aggregations-in-ravendb&amp;title=Processing large aggregations in RavenDB','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191521-A/processing-large-aggregations-in-ravendb', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191521-A/processing-large-aggregations-in-ravendb#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>0 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+								<li><a href="/blog/tags/architecture">architecture</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p>One of the distinguishing feature of RavenDB is its ability to process large aggregations very quickly. You can ask questions on very large data sets and get the results in milliseconds. This is interesting, because RavenDB isn’t an OLAP database and the kind of questions that we ask can be quite complex.</p><p>For example, we have the <em>Products/Recommendations</em> index, which allow us to ask:</p><blockquote><p>For any particular product, find me how many times it was sold, what other products were sold with it and in what frequency.</p></blockquote><p>The index to manage this is here:</p><script src="https://gist.github.com/ayende/4db8a26020a58f921c244db38d4a29d1.js"></script><p>The way it works, we map the orders and have a projection for each product, and then we add the <em>other </em>products that were sold with the current one. In the reduce, we group by the product and aggregate the related products together. </p><p>But I’m not here to talk about the recommendation engine. I wanted to explain how RavenDB process such indexes. All the information that I’m talking about can be seen in the Map/Reduce visualizer in the RavenDB Studio.</p><p>Here is a single entry for this index. You can see that products/11-A was sold 544 times and 108 times with products/69-A. </p><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_6.png"><img width="919" height="450" title="image" style="border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_thumb_2.png" border="0"></a></p><p>Because of the way RavenDB process Map/Reduce indexes, when we query, we run over the already precomputed results and there is very little computation cost at querying time. </p><p>Let see how RavenDB builds the index. Here is a single order, where three products were sold. You can see that each of them as a very interesting tree structure. </p><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_2.png"><img width="1058" height="563" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_thumb.png" border="0"></a></p><p>Here is how it looks like when we zoom into a particular product. You can <em>see</em> how RavenDB aggregate the data. First in the bottom most page on the right (#596). We aggregate that with the other 367 pages and get intermediate results at page #1410. We then aggregate that <em>again</em> with the intermediate results in page #105127 to get the final tall. In this case, you can see that products/11-A was sold 217,638 times and mostly with products/16-A (30,603 times) and products/72-A (20,603 times).</p><p><a href="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_4.png"><img width="1155" height="469" title="image" style="margin: 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="image" src="https://ayende.com/blog/Images/Open-Live-Writer/ce0c84454f30_DC5E/image_thumb_1.png" border="0"></a></p><p>When we have a new order, all we need to do is update a bottom most page and then recurse upward in the three. In the case we have here, there is a pretty big reduce value and we are dealing with tens of millions of orders. We have three levels to the tree, which means that we’ll need to do three update operations to account for new or updated data. That is <em>cheap</em>, because it means that we have to do very little work to maintain the index.</p><p>At query time, of course, we don’t really have to do much, all the hard work was done.</p><p>I like this example, because it shows case a non trivial example and how RavenDB handles this with ease. These kind of non trivial work is something that tend to be very hard to get working properly and with RavenDB this is part of my default: “let’s do this on the fly demo”.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191521-A/processing-large-aggregations-in-ravendb">read more ›</a></div>
+		</article>
+		<article class="article-body">
+            <div class="atricle-header">
+                <time>
+                    <span>Jul 24</span>
+                    2020
+                </time>
+                <a href="/blog/191553-C/ravendb-5-0-has-been-released">
+                        <h2>RavenDB 5.0 has been released!</h2>
+                </a>
+            </div>
+			
+			<div class="timetoread">
+
+				<div>
+					<span class="icomoon-position icon-time" aria-hidden="true"></span>
+					<span class="collapse"> time to read</span> <strong>2 min</strong> <span class="collapse">| <strong>364 words</strong></span>
+				</div>
+			</div>
+			<hr />
+			<div class="postData">
+				<a style='text-decoration:none;' href='http://twitter.com/intent/tweet?status=RavenDB 5.0 has been released!+https://ayende.com:443/blog/191553-C/ravendb-5-0-has-been-released via @ayende'>
+					<span class="icomoon icon-twitter"></span><span>Tweet</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://ayende.com:443/blog/191553-C/ravendb-5-0-has-been-released&amp;title=RavenDB 5.0 has been released!','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+					<span class="icomoon icon-facebook"></span><span>Share</span>
+				</a>
+				<a style='text-decoration:none;' type="icon_link" onclick="popUp=window.open('https://plus.google.com/share?url=https://ayende.com:443/blog/191553-C/ravendb-5-0-has-been-released', 'popupwindow', 'scrollbars=yes,width=600,height=400');popUp.focus();return false;" href="javascript: void(0)">
+					<span class="icomoon icon-linkedin"></span><span>Share</span>
+				</a>
+				<a href="/blog/191553-C/ravendb-5-0-has-been-released#comments">
+					<span class="icomoon-position glyphicon icon-comment" aria-hidden="true"></span><span>13 comments</span>
+				</a>
+					<div class="tags pull-right-lg">
+						<span class="icomoon-position icon-tag" aria-hidden="true"></span> Tags:
+						<ul>
+								<li><a href="/blog/tags/raven">raven</a></li>
+								<li><a href="/blog/tags/ravendb-net">ravendb.net</a></li>
+						</ul>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="articleContent">
+				<p><a href="https://ravendb.net/why-ravendb/whats-new"><img style="border: 0px currentcolor; float: right; display: inline; background-image: none;" title="image" src="https://ayende.com/blog/Images/Open-Live-Writer/RavenDB-5.0-has-been-released_C9FE/image_3.png" alt="image" width="582" height="187" align="right" border="0" /></a>RavenDB 5.0 has been released and is now available for <a href="https://ravendb.net/download">download</a> and on the <a href="https://cloud.ravendb.net/">cloud</a>. There are many new changes in this version, but <a href="https://ravendb.net/why-ravendb/whats-new">the highlights are</a>:</p>
+<ul>
+<li>Time Series support &ndash; allow to store time series data and run queries on time series of any size in milliseconds.</li>
+<li>Documents compression &ndash; will usually reduce your disk utilization by over 50%.</li>
+<li>Many indexing improvements, especially with regards to indexing and querying date time data.</li>
+</ul>
+<p>As I mentioned, you can upgrade to the new version right now on your own instances and you can deploy new cloud instances with RavenDB 5.0 immediately.</p>
+<p>RavenDB 5.0 is backward compatible with RavenDB 4.2, you can shut down your RavenDB 4.2 instance, update the binaries and start RavenDB 5.0 and everything will work. The other way around will <em>not</em> work, mind you. Once you have run RavenDB 5.0, you cannot go back to RavenDB 4.2.</p>
+<p>A RavenDB 5.0 instance can be part of a cluster running other RavenDB 4.2 nodes (and vice versa), which allows you to do rolling migrations and test the RavenDB 5.0 in production without committing all the way in.</p>
+<p>An application using RavenDB 4.x client will be able to just continue working with RavenDB 5.0 server, with no change in behavior. That enables you to just switch over to the new version without needing to modify the whole stack at once.</p>
+<p>For users running RavenDB 4.2, I&rsquo;ll remind you that this is a Long Term Support (LTS) release and it is perfectly fine to remain on that edition for the next year or so.</p>
+<p>Users on the cloud that are running RavenDB 4.2 can request an upgrade to RavenDB 5.0 via our support, but for the foreseeable future, we are going to keep users on RavenDB 4.2 unless they ask to be upgraded to RavenDB 5.0.</p>
+<p>I&rsquo;m really happy that we go to this milestone and I wanted to take this opportunity to congratulate the team behind RavenDB 5.0 for an excellent job done. Under non trivial circumstances, we have a pretty amazing product shipping, and I am very proud of what we have shipped.</p>
+			</div>
+			<div class="read-more"><a href="/blog/191553-C/ravendb-5-0-has-been-released">read more ›</a></div>
+		</article>
+</div>
+<div class="clearfix"></div>
+<nav>
+    <hr/>
+	<ul id="paginationList" class="pagination"></ul>
+	<div class="clearfix"></div>
+</nav>
+
+            </div>
+            <section class="rightSide">
+                
+
+
+<div id="futurePosts">
+    <h4>FUTURE POSTS</h4>
+        <p>No future posts left, oh my!</p>
+</div>
+
+<div id="postsSeries">
+    <h4>RECENT SERIES</h4>
+
+        <ol>
+                <li>
+                    <a href="/blog/posts/series/190273-C/podcast">
+                        <strong>
+                            Podcast
+                        </strong>
+                    </a> <em>(3)</em>:<br/>
+                    <em>17 Aug 2020</em> - #SoLeadSaturday with Oren Eini
+                </li>
+                <li>
+                    <a href="/blog/posts/series/190243-C/webinar-recording">
+                        <strong>
+                            Webinar recording
+                        </strong>
+                    </a> <em>(8)</em>:<br/>
+                    <em>10 Jul 2020</em> - Multi tenancy with RavenDB
+                </li>
+                <li>
+                    <a href="/blog/posts/series/160932/ravendb-webinar">
+                        <strong>
+                            RavenDB Webinar
+                        </strong>
+                    </a> <em>(3)</em>:<br/>
+                    <em>01 Jun 2020</em> - Polymorphism at Scale
+                </li>
+                <li>
+                    <a href="/blog/posts/series/176193/talk">
+                        <strong>
+                            Talk
+                        </strong>
+                    </a> <em>(5)</em>:<br/>
+                    <em>23 Apr 2020</em> - Advanced indexing with RavenDB
+                </li>
+                <li>
+                    <a href="/blog/posts/series/120833/challenge">
+                        <strong>
+                            Challenge
+                        </strong>
+                    </a> <em>(57)</em>:<br/>
+                    <em>21 Apr 2020</em> - Generate matching shard id&ndash;answer
+                </li>
+        </ol>
+        <a href="/blog/posts/series">View all series</a>
+</div>
+<div id="recentComments">
+    <h4>RECENT COMMENTS</h4>
+    <ul>
+            <li>
+                <div>
+                    <a href="/blog/191617-C/difference-between-knowing-python-and-knowing-python#comment4">
+                        <strong class="comment-body">Peter,
+
+Some of these I get. But not knowing how to iterate an array? There is a limit here.
+Not understanding the impact ...</strong>
+                    </a>
+                </div>
+	            <div>
+		            <strong>By</strong>&nbsp;Oren Eini on <em>Difference between knowing Python and *knowing* Python</em>
+	            </div>
+            </li>
+            <li>
+                <div>
+                    <a href="/blog/191617-C/difference-between-knowing-python-and-knowing-python#comment1">
+                        <strong class="comment-body">In my experience with many interviews trying to find what I consider quality coders, I have found that those who &quot;grok&quot; are a...</strong>
+                    </a>
+                </div>
+	            <div>
+		            <strong>By</strong>&nbsp;peter on <em>Difference between knowing Python and *knowing* Python</em>
+	            </div>
+            </li>
+            <li>
+                <div>
+                    <a href="/blog/191585-B/what-is-default-object-used-for#comment4">
+                        <strong class="comment-body">Ed,
+I&#39;m in agreement with you on the reasoning, and for _that_ reason&#160;I think that the `default(object)` is the more readabl...</strong>
+                    </a>
+                </div>
+	            <div>
+		            <strong>By</strong>&nbsp;Oren Eini on <em>What is default(object) used for?</em>
+	            </div>
+            </li>
+            <li>
+                <div>
+                    <a href="/blog/191585-B/what-is-default-object-used-for#comment3">
+                        <strong class="comment-body">**C#**&#39;s `default` is the equivalent to **VB**&#39;s `Nothing`.
+
+```
+var user = new 
+{
+  AcceptedEula = default(bool?),  // ...</strong>
+                    </a>
+                </div>
+	            <div>
+		            <strong>By</strong>&nbsp;Paulo Morgado on <em>What is default(object) used for?</em>
+	            </div>
+            </li>
+            <li>
+                <div>
+                    <a href="/blog/191585-B/what-is-default-object-used-for#comment1">
+                        <strong class="comment-body">I try to apply &quot;Don&#39;t make me think&quot;, &quot;Try to lead to the pit of success&quot;, and &quot;Prefer explicit over implicit&quot; principles, al...</strong>
+                    </a>
+                </div>
+	            <div>
+		            <strong>By</strong>&nbsp;Ed on <em>What is default(object) used for?</em>
+	            </div>
+            </li>
+    </ul>
+</div>		<div id="syndication">
+			<h4>Syndication</h4>
+			<table>
+<tbody>
+<tr>
+<td>Main feed</td>
+<td><a href="https://feeds.feedburner.com/AyendeRahien"><img style="border: 0;" src="https://feeds.feedburner.com/~fc/AyendeRahien?bg=FFAA00&amp;fg=000000" alt="Feed Stats" width="88" height="26" /></a></td>
+</tr>
+<tr>
+<td>Comments feed &nbsp;</td>
+<td><a href="https://feeds.feedburner.com/ayende/coments"><img style="border: 0;" src="https://feeds.feedburner.com/~fc/ayende/coments?bg=FFAA00&amp;fg=993300&amp;anim=0" alt="Comments Feed Stats" width="88" height="26" /></a></td>
+</tr>
+</tbody>
+</table>
+		</div>
+
+            </section>
+    </div>
+
+        <script type="text/javascript">
+            window.RaccoonRoutes = {};
+        </script>
+        <!--[if IE 8]>
+            <script type="text/javascript" src="~/Content/js/respond.src.js"></script>
+        <![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="/blog/Content/js/main?v=YxTHXhTzf3H4HTK9RPmbfXzqznyOdycLn9lLOSamk3c1"></script>
+
+	<script>
+		window.twttr = (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function (f) { t._e.push(f); }; return t; }(document, "script", "twitter-wjs"));
+	</script>
+	<script>
+		var total = 704;
+
+		$("#paginationList").twbsPagination({
+			totalPages: (total > 0) ? total : 1,
+			visiblePages: 5,
+			href: '?page={{number}}'
+		});
+	</script>
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-5476351-1']);
+                _gaq.push(['_trackPageview']);
+
+                (function () {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            </script></body>
+
+</html>
